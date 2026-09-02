@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/black" android:fitsSystemWindows="false" android:clipToPadding="false" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/preview_video_view_win_land_tablet" />
+    <FrameLayout android:id="@id/preview_win_normal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/view_float_drag_quick_shortcut" />
+        <include layout="@layout/preview_video_scroll_menu_tablet" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dp" android:layout_marginTop="10.0dp" layout="@layout/preview_page_control_tips" />
+        <include layout="@layout/preview_debug_info" />
+        <ViewStub android:id="@id/view_room_panel" android:layout="@layout/view_preview_room_panel" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@id/viewPCGuidePanel" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <include layout="@layout/view_float_drag_tool" />
+        <include layout="@layout/view_float_right_button_tip" />
+        <include layout="@layout/view_float_drag_touch_mode_lock" />
+        <include layout="@layout/view_float_menu_select_tip" />
+        <include layout="@layout/view_win_unlock" />
+        <include layout="@layout/show_game_key" />
+        <include layout="@layout/view_float_drag_touch_resume" />
+        <com.link.cloud.view.preview.ToolLayoutWinTablet android:id="@id/window_tool_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <include android:visibility="gone" layout="@layout/pop_land_guide_exit" />
+    </FrameLayout>
+    <include layout="@layout/view_preview_game_layout" />
+    <include layout="@layout/view_float_drag" />
+    <include layout="@layout/virtual_mouse_view" />
+    <com.link.cloud.view.preview.VirtualMenuWinPortTablet android:layout_gravity="end" android:id="@id/virtual_bar_bottom" android:layout_width="wrap_content" android:layout_height="match_parent" />
+    <include layout="@layout/preview_input_view" />
+    <include android:id="@id/input_keyboard" layout="@layout/preview_input_view" />
+    <include android:layout_gravity="center_horizontal" android:id="@id/preview_vip_hd_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" layout="@layout/preview_vip_hd_tips" />
+    <include android:layout_gravity="center_horizontal" android:id="@id/preview_vip_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" layout="@layout/preview_vip_tips" />
+    <FrameLayout android:id="@id/debugInfoContainer" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/iv_show_input" android:background="@drawable/ic_show_input_up" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="28.0dp" android:alpha="1.0" />
+</FrameLayout>
